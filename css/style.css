@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	font-size:100%;
+	text-decoration: none;
+}
+html {
+	background-color:darkslategray;
+}
+body {
+	font-family:serif;
+	background-color:white;
+	font-size:125%;
+	line-height:150%;
+}
+h1,h2,h4 {
+	font-weight: 700;
+	font-family:sans-serif;
+}
+footer {
+	color:white;
+	font-size:10px;
+	text-align:center;
+	background-color: darkslategray;
+	padding:20px;
+}
+p {
+	margin:20px 0;
+}
+/***************************/
+nav ul {
+	list-style-type: none;
+	display:flex;
+	justify-content: center;
+}
+nav ul li:first-child {
+	display:none;
+}
+nav ul a{
+	display:block;
+	padding:20px 35px;
+	font-family:sans-serif;
+	text-transform:uppercase;
+	color:orange;
+	transition:background-color .8s;
+}
+nav ul a:hover {
+	background-color:orange;
+	color:white;
+}
+header {
+	position: sticky;
+	background-color:rgba(255,255,255,.9);
+	top:0;
+	box-shadow: 1px 2px 3px gray;
+}
+section {
+	max-width:960px;
+	width:90%;
+	margin:0 auto;
+}
+section:nth-child(4) {
+	border-top:5px solid orange;
+	padding-top:25px;
+}
+section:nth-child(3) {
+	display:flex;
+	flex-wrap:wrap;
+}
+section:nth-child(3) div {
+	flex:1;
+	padding:20px;
+}
+section:nth-child(3) h2 {
+	width:100%;
+	text-align:center;
+	padding:25px 0;
+	font-size:200%;
+}
+main {
+	background-image:url(https://session-7-assignment.s3.us-east-2.amazonaws.com/bkg.jpg);
+	background-position:center;
+	background-size:cover;
+	min-height:350px;
+	display:flex;
+	justify-content: flex-end;
+}
+main div {
+	background-color:orange;
+	flex:.45;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction:column;
+}
+button {
+	background-color:cornflowerblue;
+	padding:15px 35px;
+	color:white;
+	border:none;
+	margin-top:25px;
+}
+h1 {
+	font-size:300%;
+	color:white;
+}
